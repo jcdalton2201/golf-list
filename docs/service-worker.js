@@ -1,4 +1,4 @@
-importScripts('workbox-sw.prod.v2.0.3.js');
+importScripts('workbox-sw.prod.v2.1.0.js');
 
 const workboxSW = new self.WorkboxSW();
 
@@ -57,6 +57,14 @@ workboxSW.precache([
   },
   {
     "url": "service-worker.js",
-    "revision": "216fdf20b00ebc5e755c9b7f77a3c330"
+    "revision": "120dfcb6c94248f334a360cfe8b403ac"
+  },
+  {
+    "url": "workbox-sw.prod.v2.1.0.js",
+    "revision": "e5f207838d7fd9c81835d5705a73cfa2"
+  },
+  {
+    "url": "workbox-sw.prod.v2.1.0.js.map",
+    "revision": "6fc68cbf40e4e2f38d2889fdaf5bc58a"
   }
 ]);
