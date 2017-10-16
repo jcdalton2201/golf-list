@@ -1,34 +1,34 @@
 {
-  "name": "PWA Weather App",
-  "short_name": "Weather",
+  "name": "My Top Public Golf Courses",
+  "short_name": "My Top Golf",
   "icons": [{
-    "src": "images/icons/icon-32x32.png",
+    "src": "images/icons/icons-16.png",
       "sizes": "16x16",
       "type": "image/png"
     }, {
-      "src": "images/icons/icon-32x32.png",
+      "src": "images/icons/icons-32.png",
       "sizes": "32x32",
       "type": "image/png"
     }, {
-      "src": "images/icons/icon-128x128.png",
+      "src": "images/icons/icons-64.png",
       "sizes": "96x96",
       "type": "image/png"
     }, {
-      "src": "images/icons/icon-128x128.png",
+      "src": "images/icons/icons-128.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "images/icons/icon-192x192.png",
+      "src": "images/icons/icon-256.png",
       "sizes": "198x198",
       "type": "image/png"
     },
     {
-      "src": "images/icons/icon-256x256.png",
+      "src": "images/icons/icons-256.png",
       "sizes": "512x512",
       "type": "image/png"
     }],
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ccffcc",
-  "theme_color": "#009900"
+  "background_color": "#ff9900",
+  "theme_color": "#00cc00"
 }
