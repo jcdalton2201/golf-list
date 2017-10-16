@@ -20,6 +20,27 @@
   <body>
     <golf-course-app></golf-course-app>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service-worker.js')
+        .then((x) => {
+          console.log(x);
+        });
+      navigator.serviceWorker.addEventListener('message', (event) => {
+        if (event.data.cache) {
+          document.querySelector('.offline').style.display = 'block';
+        } else {
+          document.querySelector('.offline').style.display = 'none';
+        }
+      });
+
+
+    }
+    </script>
     <script src="golf-web.7c7e31ecadd5e3ef39cf7bd8190e9e55ee87934c20165bded8e26c16319cc346.js" charset="utf-8"></script>
+    <noscript>
+      This app requires javascript to be turn on!
+    </noscript>
   </body>
 </html>
