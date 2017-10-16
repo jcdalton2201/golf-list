@@ -1,0 +1,1 @@
+require('../.temp/golf-course-app.js');
