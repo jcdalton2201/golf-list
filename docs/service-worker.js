@@ -52,12 +52,16 @@ workboxSW.precache([
     "revision": "a155a47337a97448af58eb95314cbb77"
   },
   {
+    "url": "images/Old-Course-mobile.webp",
+    "revision": "7a88d2fc7ce30c0698f380455be92c5e"
+  },
+  {
     "url": "images/Old-Course-St-Andrews-Links-Trust-min.png",
     "revision": "3accc35a8c2ab00d9da9949ee4cb6ddf"
   },
   {
     "url": "index.html",
-    "revision": "330d52b5a75874d7b5ef4ecb5f3d9289"
+    "revision": "a1c6a1470d1f515c457d7f7ce6e3e557"
   },
   {
     "url": "manifest.json",
@@ -65,7 +69,7 @@ workboxSW.precache([
   },
   {
     "url": "service-worker.js",
-    "revision": "cb4639c8a31c79580a3eaa54e9a7db58"
+    "revision": "d3c209793a5340e032f7dfb41f5ab89f"
   },
   {
     "url": "workbox-sw.prod.v2.1.0.js",
