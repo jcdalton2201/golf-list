@@ -10,11 +10,11 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
   color: rgba(0,0,0,0.8);
   font-size: 3rem;
   font-family: 'Vollkorn SC', serif;
   text-shadow: 2px 2px 1px #3d3a3a;
+
   a {
     text-decoration: none;
     color: rgba(0,0,0,0.8);
@@ -23,6 +23,12 @@ input {
           text-decoration: none;
         }
   }
+}
+@media only screen
+  and (min-device-width: 420px) {
+    .icon-item {
+      padding: 0 25px;
+    }
 }
 .label{
   &:hover{

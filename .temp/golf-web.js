@@ -513,7 +513,6 @@ class golfRadioIcon extends HTMLElement {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 3rem;
   font-family: 'Vollkorn SC', serif;
@@ -524,6 +523,10 @@ class golfRadioIcon extends HTMLElement {
     .icon-item a:visited {
       color: rgba(0, 0, 0, 0.8);
       text-decoration: none; }
+
+@media only screen and (min-device-width: 420px) {
+  .icon-item {
+    padding: 0 25px; } }
 
 .label {
   cursor: pointer; }
