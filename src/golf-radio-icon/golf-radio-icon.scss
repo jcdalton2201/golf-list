@@ -1,0 +1,32 @@
+input {
+  position: absolute;
+  opacity: 0;
+  &:checked+.label{
+    color: white;
+    text-shadow: 2px 2px 1px #b69a9a;;
+  }
+}
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: rgba(0,0,0,0.8);
+  font-size: 3rem;
+  font-family: 'Vollkorn SC', serif;
+  text-shadow: 2px 2px 1px #3d3a3a;
+  a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    &:visited {
+          color: rgba(0,0,0,0.8);
+          text-decoration: none;
+        }
+  }
+}
+.label{
+  &:hover{
+    color: rgba(0,0,0,0.5);
+  }
+  cursor: pointer;
+}

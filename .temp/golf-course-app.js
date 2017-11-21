@@ -1,9 +1,11 @@
 import {rankings} from './course-rankings.js';
 import './golf-course-card.js';
+import './golf-radio-icon.js';
 class golfCourseApp extends HTMLElement {
   constructor(){
     super();
     this._shadowRoot = this.attachShadow({mode: 'open'});
+    this.sortItem = 'rank';
   }
   connectedCallback(){
     this._shadowRoot.innerHTML = `<style>golf-course-card {
@@ -17,7 +19,26 @@ class golfCourseApp extends HTMLElement {
   flex-wrap: wrap;
   margin: 20px;
   justify-content: center; }
-</style><div class='list'></div>`;
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Vollkorn SC', serif;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px #b69a9a; }
+</style><h1>Top 20 Courses</h1>
+<golf-radio-icon value='rank'>
+</golf-radio-icon>
+<div class='list'></div>
+
+`;
+    this.icons = this._shadowRoot.querySelector('golf-radio-icon');
+    this.icons.addEventListener('change',(event)=>{
+      console.log(event);
+      this.sortItem = event.detail;
+      this.__buildHtml();
+    }
+  );
     this.__buildHtml();
 
   }
@@ -30,8 +51,11 @@ class golfCourseApp extends HTMLElement {
   adoptedCallback(){
 
   }
+  __sortGolf(prev, current){
+    return parseInt(prev[this.sortItem]) - parseInt(current[this.sortItem]);
+  }
   __buildHtml(){
-    const baseHtml = rankings.map((item)=>{
+    const baseHtml = rankings.sort(this.__sortGolf.bind(this)).slice(0,20).map((item)=>{
       let played = '';
       if(item.played){
         played = 'played';
