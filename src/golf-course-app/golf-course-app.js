@@ -1,12 +1,21 @@
 import {rankings} from './course-rankings.js';
 import './golf-course-card.js';
+import './golf-radio-icon.js';
 class golfCourseApp extends HTMLElement {
   constructor(){
     super();
     this._shadowRoot = this.attachShadow({mode: 'open'});
+    this.sortItem = 'rank';
   }
   connectedCallback(){
     this._shadowRoot.innerHTML = tempHtml;
+    this.icons = this._shadowRoot.querySelector('golf-radio-icon');
+    this.icons.addEventListener('change',(event)=>{
+      console.log(event);
+      this.sortItem = event.detail;
+      this.__buildHtml();
+    }
+  );
     this.__buildHtml();
 
   }
@@ -19,8 +28,11 @@ class golfCourseApp extends HTMLElement {
   adoptedCallback(){
 
   }
+  __sortGolf(prev, current){
+    return parseInt(prev[this.sortItem]) - parseInt(current[this.sortItem]);
+  }
   __buildHtml(){
-    const baseHtml = rankings.map((item)=>{
+    const baseHtml = rankings.sort(this.__sortGolf.bind(this)).slice(0,20).map((item)=>{
       let played = '';
       if(item.played){
         played = 'played';
