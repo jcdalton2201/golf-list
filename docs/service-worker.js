@@ -4,12 +4,12 @@ const workboxSW = new self.WorkboxSW();
 
 workboxSW.precache([
   {
-    "url": "golf-web.cf753e51da2294cadaab9dc47fca9e2783f0254c5a068edd826840e3be124bd7.js",
-    "revision": "4aa1b3bb06e99bff9b9d3134ff50a6fe"
+    "url": "golf-web.01db3aaef69ea056b178593edfed8c08196e821a69cb2ba7871dfff25d595676.js",
+    "revision": "cfd8bbce0222d622182dca77f79c8830"
   },
   {
-    "url": "golf-web.cf753e51da2294cadaab9dc47fca9e2783f0254c5a068edd826840e3be124bd7.js.map",
-    "revision": "9b35b38f044dd271ee3f135bc47b3205"
+    "url": "golf-web.01db3aaef69ea056b178593edfed8c08196e821a69cb2ba7871dfff25d595676.js.map",
+    "revision": "e80273f8a6be43fdb80a71b1a3bb0d5e"
   },
   {
     "url": "images/icons/icon-256x256.png",
@@ -61,7 +61,7 @@ workboxSW.precache([
   },
   {
     "url": "index.html",
-    "revision": "65d29a8573d7d69145ad2d7a3de26c2d"
+    "revision": "4a936e30c0f7dae7569ccb0e726b361d"
   },
   {
     "url": "manifest.json",
@@ -69,7 +69,7 @@ workboxSW.precache([
   },
   {
     "url": "service-worker.js",
-    "revision": "f7d97fa55a7dc71387fbcd978022ce15"
+    "revision": "8f4ee929104ccc32e6969e87e37d578c"
   },
   {
     "url": "workbox-sw.prod.v2.1.0.js",
