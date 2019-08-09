@@ -1,4 +1,4 @@
-importScripts('workbox-sw.prod.v2.1.0.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/release/4.3.1/workbox-sw.js');
 
 const workboxSW = new self.WorkboxSW();
 
