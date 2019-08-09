@@ -2,7 +2,7 @@ importScripts('workbox-sw.prod.v2.1.0.js');
 
 const workboxSW = new self.WorkboxSW();
 
-workboxSW.precache([
+workboxSW.precacheAndRoute([
   {
     "url": "golf-web.f4af378b40529b56df94d137399dbb18caf80c93a0a638ccee9f5f3a6dca1f10.js",
     "revision": "5411181077abf4684dc7980d35642605"
@@ -66,10 +66,6 @@ workboxSW.precache([
   {
     "url": "manifest.json",
     "revision": "dff686a3a2559d08d0cc4884e3e4b636"
-  },
-  {
-    "url": "service-worker.js",
-    "revision": "f5ab9933a50cc9938ab98e43e8e83460"
   },
   {
     "url": "workbox-sw.prod.v2.1.0.js",
