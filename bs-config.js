@@ -1,10 +1,10 @@
-var proxy = require('proxy-middleware');
-var url = require('url');
-// var proxyListing = url.parse('https://hostname/digital-data');
+// var proxy = require('proxy-middleware');
+// var url = require('url');
+// var proxyListing = url.parse('https://hostmachine/digital-data');
 // proxyListing.route = '/enterprise/digital-data';
 // proxyListing.preserveHost = true;
 // // var localProxy = url.parse('http://127.0.0.1:8080/digital-data');
-// var localProxy = url.parse('https://hostname/digital-data');
+// var localProxy = url.parse('https://hostmachine/digital-data');
 // localProxy.route = '/digital-data';
 // localProxy.preserveHost = true;
 /*
