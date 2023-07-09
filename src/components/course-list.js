@@ -1,5 +1,10 @@
 import { LitElement, html, css } from 'lit';
 export default class CourseList extends LitElement {
+  static styles = css`
+  div {
+    color: white;
+  }
+  `
     constructor() {
         super();
     }
@@ -11,7 +16,7 @@ export default class CourseList extends LitElement {
     render(){
         console.log('we render');
         return html`
-        List Me
+        <div>Todo</div>
         `;
     }
     
