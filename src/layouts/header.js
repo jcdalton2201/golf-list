@@ -60,7 +60,7 @@ export class TilsynHeader extends LitElement {
     return html`
     <header class='sidebar'>
         <img src='/golf-list/images/wiggle.webp'></img>
-        <div class='title'><a href='/golf-list/'>Dalton Golf Travles</a></div>
+        <div class='title'><a href='/golf-list/'>Dalton Golf Travels</a></div>
     </header>
     `;
   }
