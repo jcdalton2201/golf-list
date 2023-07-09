@@ -1,1 +1,0 @@
-import '../.temp/golf-course-app.js';

@@ -1,0 +1,110 @@
+---
+import  "../layouts/header.js";
+
+---
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+	body {
+    background-size: auto 100%; 
+		margin: 0;
+		height: 100%;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(0.25turn,#1c2627,#1c2627,#1c2627);
+	}
+	.wrapper {
+    background: linear-gradient(0.25turn,#1c2627,#1c2627,#1c2627);
+    color: #444;
+    display: grid;
+		min-width: fit-content;
+  }
+  TilsynHeader {
+	grid-area: header;
+  }
+  .content {
+    grid-area: content;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-areas:
+     "header"
+     "content"
+     "footer"
+  }
+  .header {
+    grid-area: header;
+  }
+  footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(0.25turn,#1c2627,#1c2627,#1c2627);
+    color: white;
+  }
+  .about, .copyright {
+  margin-bottom: 10px;
+  }
+
+  .about p, .copyright p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 500px)  {
+  .wrapper {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "header   header"
+    "content  content"
+    "footer   footer";
+    min-width: fit-content;
+  }
+  }
+
+  @media only screen and (min-width: 600px)   {
+    .wrapper {
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas:
+      "header  header "
+      "content content"
+      "footer  footer ";
+      min-width: fit-content;
+    }
+  }
+</style>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Zilla+Slab:wght@300&display=swap');
+      </style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<tilsyn-header class="header"></tilsyn-header>
+			<div class="content"><slot></slot></div>
+			<footer>
+        <div class="about">
+          <p>About Our Golf Blog</p>
+          <p>Welcome to Dalton Family Golf Travels, where our passion for golf and exploration come together to create unforgettable golfing adventures for the whole family.</p>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Dalton Golf Travels. All rights reserved.</p>
+        </div>
+      </footer>
+			
+		</div>
+	</body>
+</html>
