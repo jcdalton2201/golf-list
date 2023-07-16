@@ -8,10 +8,7 @@ export default class CourseList extends LitElement {
     constructor() {
         super();
     }
-    static get properties() {
-        return {
-        };
-    }
+
     
     render(){
         console.log('we render');

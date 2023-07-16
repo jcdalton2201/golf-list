@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import  '../components/course-list.js';
+import { CoursesCard } from '../components/courses-card.js';
+
 ---
 
 <BaseLayout>
-	<course-list></course-list>
+	<CoursesCard client:only></CoursesCard>
 </BaseLayout>
