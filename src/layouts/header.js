@@ -19,10 +19,15 @@ export class TilsynHeader extends LitElement {
         justify-self: center;
     }
     .sidebar .title {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
         font-family: 'Zilla Slab', serif;
         color: white;
         border-bottom: white 1px solid;
+    }
+    @media only screen and (min-width: 500px)  {
+        .sidebar .title {
+            font-size: 2.75rem;
+        }
     }
     .logoImage {
         height: 70px;
