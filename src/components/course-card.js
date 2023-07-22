@@ -30,6 +30,7 @@ export default class CourseCard extends LitElement {
     .description {
       margin: 8px;
       height: inherit;
+      font-size: .85rem;
     }
 
     .rating {
