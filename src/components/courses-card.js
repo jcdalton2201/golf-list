@@ -25,13 +25,13 @@ export  class CoursesCard extends LitElement {
   async firstUpdated(){
     const request = await fetch('/golf-list/data/golfcourse.json');
     const data = await request.json();
-    this.cards = data;
+    this.cards = data.sort((a,b) => a.rating - b.rating);
     console.log(this.cards);
   }
   render() {
     // const cards = await this.fetchData();
     return html`<div class='course-list'>
-    ${this.cards.map((card) => html`<course-card name=${card.name} imageUrl=${card.url} description=${card.description}></course-card>
+    ${this.cards.map((card) => html`<course-card name=${card.name} imageUrl=${card.url} description=${card.description} rating=${card.rating}></course-card>
     </div>`)}
     `;
   }

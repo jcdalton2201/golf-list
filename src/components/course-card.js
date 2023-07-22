@@ -11,6 +11,7 @@ export default class CourseCard extends LitElement {
       flex-direction: column;
       min-height: 500px;
       max-height: 500px;
+      height: 100%;
     }
 
     .image {
@@ -28,11 +29,13 @@ export default class CourseCard extends LitElement {
 
     .description {
       margin: 8px;
+      height: inherit;
     }
 
     .rating {
         text-align: right;
         padding: 0 8px 8px 0;
+        font-family: 'Lumanosimo', cursive;
     }
   `;
 
